@@ -1,12 +1,15 @@
-var w     = 300,        
-    h     = 300,
-    r     = 100,
-    color = d3.scale.category20c();
+var w     = 600,        
+    h     = 600,
+    r     = 200,
+    color = d3.scale.category10();
 
     data = [
-        {"label": "mac", "value":62},
-        {"label": "windows", "value":33},
-        {"label": "ubuntu", "value":5}
+        {"label": "basketball", "value":17.4},
+        {"label": "hockey", "value":14.1},
+        {"label": "football", "value":35},
+        {"label": "soccer", "value":8},
+        {"label": "baseball", "value":31.5},
+
     ];
 
     var vis = d3.select("body")
@@ -47,6 +50,7 @@ var w     = 300,
             .text(function(d, i) {
                 return data[i].label;
             });
+
 
 
 
